@@ -1,25 +1,20 @@
-const cart = document.querySelector (".cart");
-const cart_menu = document.querySelector (".cart_menu");
+"use strict";
+const catalogEl = document.querySelector(".catalog");
 const totalPriceEl = document.querySelector (".total_price");
-const productPrices = document.querySelectorAll (".product_price");
-const addToCartButton = document.querySelectorAll (".cart_box");
-const productNames = document.querySelectorAll (".description_heading");
-const productImages = document.querySelectorAll (".catalog_img");
+const cartEl = document.querySelector (".cart");
+const cartMenuEl = document.querySelector (".cart_menu");
 const cartBlock = document.querySelector(".cart_block");
-let totalPrice = Number(totalPriceEl.textContent);
-const productArr = []
-const usedProducts = new Set();
+const cart = {};
 class Product {
-    constructor(name, price, image, id, quantity) {
+    constructor(id, name, price, image, quantity) {
+        this.id = id;
         this.name = name;
         this.price = price;
         this.image = image;
-        this.id = id;
         this.quantity = quantity;
     }
-
-    getProductMarkup() {
-        return `
+    setProductMarkup() {
+        const productMarkup =  `
         <div class="cart_item" data-number=${this.id}>
           <img src=${this.image} alt="cart_product" class="cart_img">
             <div class="cart_info_block">
@@ -35,62 +30,62 @@ class Product {
              </div>
              <i class="fa-solid fa-circle-xmark"></i>
       `;
-    }
-}
-cart.addEventListener("click", () => {
-    cart_menu.classList.toggle("hidden");
-})
-
-cart_menu.addEventListener("click", deleteItem)
-
-for (let i = 0; i < addToCartButton.length; i++) {
-    let name = productNames[i];
-    let price = productPrices[i];
-    let image = productImages[i];
-    productArr.push(new Product(name.textContent, price.textContent, image.src, i, 1));
-
-}
-const productElsArr = [];
-console.log (productArr)
-let productQuantity;
-addToCartButton.forEach(el => {
-    el.addEventListener("click", (e) => {
-        e.preventDefault();
-        if (!usedProducts.has(productArr[el.parentElement.dataset.id].id)) {
-            cartBlock.insertAdjacentHTML("afterend", productArr[el.parentElement.dataset.id].getProductMarkup());
-            usedProducts.add(productArr[el.parentElement.dataset.id].id);
-        } else {
-            productQuantity = Number(productArr[el.parentElement.dataset.id].quantity);
-            productQuantity += 1;
-            productArr[el.parentElement.dataset.id].quantity = productQuantity;
-            const currEl = document.querySelector(`[data-number="${productArr[el.parentElement.dataset.id].id}"]`)
-            console.log (currEl)
-            currEl.querySelector(".product_quantity").textContent = productQuantity;
-            console.log ("Already exists")
-        }
-
-        totalPrice += Number(productArr[el.parentElement.dataset.id].price);
-        totalPriceEl.textContent = totalPrice;
-    })
-})
-
-
-
-function deleteItem(e) {
-    if (e.target.classList.contains("fa-circle-xmark")) {
-        const priceEl = e.target.parentElement.querySelector(".product_price");
-        const quantityEl = e.target.parentElement.querySelector(".product_quantity");
-        productQuantity = Number(quantityEl.textContent);
-        totalPrice -= Number(priceEl.textContent);
-        totalPriceEl.textContent = totalPrice;
-        usedProducts.delete(+e.target.parentElement.dataset.number);
-        if (productQuantity > 1) {
-            productQuantity -= 1;
-            quantityEl.textContent = productQuantity;
-        } else {
-            e.target.parentElement.remove();
-            productArr[e.target.parentElement.dataset.number].quantity = 1;
-        }
+        cartBlock.insertAdjacentHTML('afterbegin', productMarkup);
     }
 }
 
+cartEl.addEventListener("click", () => {
+    cartMenuEl.classList.toggle("hidden");
+})
+catalogEl.addEventListener("click", evt => {
+    if (evt.target.closest(".cart_box")) {
+        evt.preventDefault();
+        const currProduct = evt.target.closest(".item");
+        const id = currProduct.dataset.id;
+        const name = currProduct.querySelector('.description_heading').textContent;
+        const price = currProduct.querySelector('.product_price').textContent;
+        const image = currProduct.querySelector('.catalog_img').src;
+        addToCart(id, name, price, image);
+    }
+})
+cartBlock.addEventListener("click", evt => {
+    if (evt.target.classList.contains("fa-circle-xmark")) {
+        const currProduct = evt.target.closest(".cart_item")
+        currProduct.querySelector(".product_quantity");
+        const id = currProduct.dataset.number;
+        deleteItem(id, currProduct);
+    }
+})
+function deleteItem(id, currProduct) {
+    totalPriceEl.textContent = getTotalPrice("-", id);
+    if (cart[id].quantity > 1) {
+        cart[id].quantity--;
+        currProduct.querySelector(".product_quantity").textContent = cart[id].quantity;
+    } else {
+        currProduct.remove();
+        delete(cart[id]);
+    }
+}
+function addToCart(id, name, price, image) {
+    if (!(id in cart)) {
+        cart[id] = new Product(id, name, price, image, 1);
+        cart[id].setProductMarkup();
+    } else {
+        cart[id].quantity++;
+        const currEl = cartBlock.querySelector(`[data-number="${cart[id].id}"]`);
+        currEl.querySelector(".product_quantity").textContent = cart[id].quantity;
+    }
+    totalPriceEl.textContent = getTotalPrice("+");
+
+
+}
+function getTotalPrice(op, id) {
+    const totalSum = Object.values(cart).reduce((acc, product) => acc + product.price * product.quantity, 0);
+    switch (op) {
+        case "+":
+            return totalSum;
+        case "-":
+            return totalSum - cart[id].price;
+    }
+
+}

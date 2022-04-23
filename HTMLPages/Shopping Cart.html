@@ -2,9 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Product</title>
+    <title>Shopping Cart</title>
     <script src="https://kit.fontawesome.com/8dd40d4479.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -14,9 +14,10 @@
         <header class="header">
             <div class="left_part">
                 <a href="#" class="logo">
-                    <img src="images/logo.svg" alt="logo" class="logo_img">
+                    <img src="../images/logo.svg" alt="logo" class="logo_img">
                     <div class="logo_text">bran<span class="letter_D">d</span></div>
                 </a>
+
                 <details>
                     <summary class="browse">Browse
                         <i class="fa-solid fa-caret-down fa-caret-down-browse"></i>
@@ -30,7 +31,7 @@
                 </form>
             </div>
             <div class="right_part">
-                <img src="images/cart.svg" alt="cart" class="cart">
+                <img src="../images/cart.svg" alt="cart" class="cart">
                 <div class="account_details">My Account
                     <i class="fa-solid fa-caret-down"></i>
                 </div>
@@ -252,321 +253,108 @@
             <div class="container nav">
                 <p class="text_nav">New arrivals</p>
                 <div class="bread_crumbs">
-                    <a href="index.html" class="main_nav">Home</a>/
+                    <a href="../index.html" class="main_nav">Home</a>/
                     <a href="#" class="main_nav">Men</a>/
                     <div class="main_nav last_nav"> New arrivals</div>
                 </div>
             </div>
         </div>
     </nav>
-    <section>
-        <div class="container catalog_items">
-            <div class="left_nav">
-                <details>
-                    <summary class="choose_nav">Category
-                        <i class="fa-solid fa-caret-down"></i>
-                    </summary>
-                    <div class="choose_nav_block">
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Bags</a>
-                        <a href="#" class="choose_nav_op">Denim</a>
-                        <a href="#" class="choose_nav_op">Hoodies & Sweatshirts</a>
-                        <a href="#" class="choose_nav_op">Jackets & Coats</a>
-                        <a href="#" class="choose_nav_op">Pants</a>
-                        <a href="#" class="choose_nav_op">Polos</a>
-                        <a href="#" class="choose_nav_op">Shirts</a>
-                        <a href="#" class="choose_nav_op">Shoes</a>
-                        <a href="#" class="choose_nav_op">Shorts</a>
-                        <a href="#" class="choose_nav_op">Sweaters & Knits</a>
-                        <a href="#" class="choose_nav_op">T-Shirts</a>
-                        <a href="#" class="choose_nav_op">Tanks</a>
+    <section class="cart">
+        <div class="container">
+            <div class="cart_details">
+                <div class="cart_header">
+                    <div class="cart_header_item">Product Details</div>
+                    <div class="cart_header_item">Unite Price</div>
+                    <div class="cart_header_item">Quantity</div>
+                    <div class="cart_header_item">Shipping</div>
+                    <div class="cart_header_item">Subtotal</div>
+                    <div class="cart_header_item">Action</div>
+                </div>
+                <div class="cart_section">
+                    <a href="#" class="cart_general">
+                        <img src="../ShoppingCartImages/rectangle_26_2879.png" alt="photo" class="cart_img">
+                        <div class="cart_section_descr">
+                            <h3 class="cart_section_descr_header">Mango people t-shirt</h3>
+                            <p class="cart_section_descr_add"><span class="cart_highlighted">Color: </span>Red</p>
+                            <p class="cart_section_descr_add"><span class="cart_highlighted">Size: </span>XL</p>
+                        </div>
+                    </a>
+                    <div class="cart_option">$150</div>
+                    <div class="cart_option">
+                        <input class="number_items" type="number" min="1">
                     </div>
-                </details>
-                <details >
-                    <summary class="choose_nav">Brand
-                        <i class="fa-solid fa-caret-down"></i>
-                    </summary>
-                    <div class="choose_nav_block">
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
+                    <div class="cart_option">Free</div>
+                    <div class="cart_option">$300</div>
+                    <i class="cart_option fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="cart_section">
+                    <a href="#" class="cart_general">
+                        <img src="../ShoppingCartImages/rectangle_26_2905.png" alt="photo" class="cart_img">
+                        <div class="cart_section_descr">
+                            <h3 class="cart_section_descr_header">Mango people t-shirt</h3>
+                            <p class="cart_section_descr_add"><span class="cart_section_descr_add cart_highlighted">Color: </span>Red</p>
+                            <p class="cart_section_descr_add"><span class="cart_highlighted">Size: </span>XL</p>
+                        </div>
+                    </a>
+                    <div class="cart_option">$150</div>
+                    <div class="cart_option">
+                        <input class="number_items" type="number" min="1">
                     </div>
-                </details>
-                <details >
-                    <summary class="choose_nav">Designer
-                        <i class="fa-solid fa-caret-down"></i>
-                    </summary>
-                    <div class="choose_nav_block">
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
-                        <a href="#" class="choose_nav_op">Accessories</a>
+                    <div class="cart_option">Free</div>
+                    <div class="cart_option">$300</div>
+                    <i class="cart_option fa-solid fa-circle-xmark"></i>
+                </div>
+                <div class="cart_section">
+                <a href="#" class="cart_general">
+                    <img src="../ShoppingCartImages/rectangle_26_2920.png" alt="photo" class="cart_img">
+                    <div class="cart_section_descr">
+                        <h3 class="cart_section_descr_header">Mango people t-shirt</h3>
+                        <p class="cart_section_descr_add"><span class="cart_highlighted">Color: </span>Red</p>
+                        <p class="cart_section_descr_add"><span class="cart_highlighted">Size: </span>XL</p>
                     </div>
-                </details>
+                </a>
+                <div class="cart_option">$150</div>
+                <div class="cart_option">
+                    <input class="number_items" type="number" min="1">
+                </div>
+                <div class="cart_option">Free</div>
+                <div class="cart_option">$300</div>
+                <i class="cart_option fa-solid fa-circle-xmark"></i>
             </div>
-            <div class="right_nav">
-                <div class="select_nav">
-                    <div class="trending">
-                        <h3 class="sort_header">Trending now</h3>
-                        <div class="trending_content">
-                            <a href="#" class="trending_item">Bohemian</a>
-                            <a href="#" class="trending_item">Floral</a>
-                            <a href="#" class="trending_item">Lace Floral</a>
-                            <a href="#" class="trending_item">Lace</a>
-                            <a href="#" class="trending_item">Bohemian</a>
-                        </div>
-                    </div>
-                    <div class="size">
-                        <h3 class="sort_header">Size</h3>
-                        <div class="size_content">
-                            <label class="size_item" for="happy">XXS
-                                <input type="checkbox" class="size_op" id="happy">
-                            </label>
-                            <label class="size_item">XS
-                                <input type="checkbox" class="size_op">
-                            </label>
-                            <label class="size_item">S
-                                <input type="checkbox" class="size_op">
-                            </label>
-                            <label class="size_item">M
-                                <input type="checkbox" class="size_op">
-                            </label>
-                            <label class="size_item">L
-                                <input type="checkbox" class="size_op">
-                            </label>
-                            <label class="size_item">XL
-                                <input type="checkbox" class="size_op">
-                            </label>
-                            <label class="size_item">XXL
-                                <input type="checkbox" class="size_op">
-                            </label>
+            </div>
+            <div class="buttons_block">
+                <a href="#" class="cart_button">Clear shopping cart</a>
+                <a href="#" class="cart_button">Continue shopping</a>
+            </div>
 
-                        </div>
-                    </div>
-                    <div class="price">
-                        <h3 class="sort_header">Price</h3>
-                        <input type="range">
-                    </div>
-                </div>
-                <div class="sort_nav">
-                    <div class="select_block">
-                        <div class="select_header">Sort By</div>
-
-                        <select class="select_item" name="" >
-
-                            <option value="">Name</option>
-                        </select>
-                    </div>
-                    <div class="select_block">
-                        <div class="select_header">Show</div>
-                        <select class="select_item" name="" >
-
-                            <option value="">09</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="goods_gal">
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img first"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img second"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img third"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img fourth"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img fifth"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img sixth"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img seventh"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img eighth"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="cd" class="catalog_item ">
-                            <div class="catalog_img ninth"></div>
-                            <div class="item_description">
-                                <p class="description_heading">Mango  People  T-shirt</p>
-                                <p class="item_price">$52.00</p>
-                            </div>
-                        </a>
-                        <div class="cart_box">
-                            <a href="gh" class="cart_link">
-                                <img src="images/Forma_1_copy.svg" alt="cart">
-                                <p class="add_text">Add to Cart</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="page_selector">
-                    <div class="page">
-                        <a href="#" class="fa-solid_link">
-                            <i class="fa-solid fa-angle-left"></i>
-                        </a>
-                        <a href="#" class="page_item">1</a>
-                        <a href="#" class="page_item">2</a>
-                        <a href="#" class="page_item">3</a>
-                        <a href="#" class="page_item">4</a>
-                        <a href="#" class="page_item">5</a>
-                        <a href="#" class="page_item">6</a>
-                        <a href="#" class="page_item">20</a>
-                        <a href="#" class="fa-solid_link">
-                            <i class="fa-solid fa-angle-right"></i>
-                        </a>
-                    </div>
-                    <a href="#" class="view">View All</a>
-                </div>
-        </div>
         </div>
 
     </section>
-    <section class="adv">
-        <div class="container adv_block">
-            <div class="offer_description">
-                <div class="offer_part">
-                    <img class="offer_img" src="offer_images/car.svg" alt="car">
-                    <div class="offer_block">
-                        <p class="offer_item_header">Free Delivery</p>
-                        <p class="offer_item_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
+    <section class="">
+        <div class="container product_info">
+        <form class="product_block">
+            <h3 class="product_block_header">Shipping address</h3>
+            <select class="product_input city_select" name="" id=""></select>
+            <input type="text" class="product_input" placeholder="State">
+            <input type="text" class="product_input" placeholder="Postcode / Zip">
+            <input type="submit" class="product_submit" value="Get a quote">
+        </form>
+        <div class="product_block">
+            <h3 class="product_block_header">Coupon discount</h3>
+            <p class="product_block_descr">Enter your coupon code if you have one</p>
+            <input type="text" class="product_input" placeholder="State">
+            <input type="submit" class="product_submit" value="Apply coupon">
+        </div>
+        <div class="product_block last">
+            <div class="product_block_total">
+                <div class="prices">
+                    <p class="sub_total">Sub total <span class="sub_total sub_price">$900</span></p>
+                    <p class="grand_total">Grand total <span class="grand_total grand_price">$900</span></p>
                 </div>
-                <div class="offer_part">
-                    <img class="offer_img" src="offer_images/percent.svg" alt="percent">
-                    <div class="offer_block">
-                        <p class="offer_item_header">Sales & discounts</p>
-                        <p class="offer_item_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-                <div class="offer_part">
-                    <img class="offer_img" src="offer_images/crown.svg" alt="crown">
-                    <div class="offer_block">
-                        <p class="offer_item_header">Quality assurance</p>
-                        <p class="offer_item_text">Worldwide delivery on all. Authorit tively morph next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
+                    <a href="#" class="checkout_button">Proceed to checkout</a>
+            </div>
+
         </div>
         </div>
     </section>
@@ -576,7 +364,7 @@
                 <div class="info_left">
                     <figure class="info_main">
                         <div class="info_face">
-                            <img src="images/face.png" alt="face" class="face">
+                            <img src="../images/face.png" alt="face" class="face">
                             <div class="info">
                                 <p class="pers_info">“Vestibulum quis porttitor dui! Quisque viverra nunc mi,
                                     a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”</p>
@@ -598,7 +386,7 @@
                             FOR OUR NEWLETTER AND PROMOTION</div>
                         <div class="submit_block">
                             <input type="text" class="email" placeholder="Enter your email">
-                            <button class="subscribe_button">Subscribe</button>
+                            <input type="submit" class="subscribe_button" value="Subscribe">
                         </div>
                     </div>
                 </div>
@@ -609,7 +397,7 @@
         <div class="container bottom">
             <div class="logo_part">
                 <a href="#" class="logo">
-                    <img src="images/logo.svg" alt="logo" class="logo_img">
+                    <img src="../images/logo.svg" alt="logo" class="logo_img">
                     <div class="logo_text">bran<span class="letter_D">d</span></div>
                 </a>
                 <p class="footer_text">Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships. </p>
@@ -673,5 +461,6 @@
             </div>
         </div>
     </footer>
+
 </body>
 </html>

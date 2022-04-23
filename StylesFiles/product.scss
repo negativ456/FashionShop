@@ -6,12 +6,12 @@ $RIGHT_BLOCK_WIDTH: 846px;
 @keyframes scale-in-ver-top {
   0% {
     transform: scaleY(0);
-    transform-origin: 100% 0%;
+    transform-origin: 100% 0;
     opacity: 1;
   }
   100% {
     transform: scaleY(1);
-    transform-origin: 100% 0%;
+    transform-origin: 100% 0;
     opacity: 1;
   }
 }
@@ -142,7 +142,7 @@ details[open] .choose_nav_block{
     padding-left: 10px;
     width: 85px;
     border: none;
-    font-family: Lato;
+    font-family: Lato, serif;
     font-size: 14px;
     line-height: 26px;
     font-weight: 400;
@@ -151,7 +151,7 @@ details[open] .choose_nav_block{
     background-repeat: no-repeat;
     background-position: right .7em top 50%, 0 0;
     background-size: .65em auto, 100%;
-    background-image: url(ProductImages/caret-down-solid.svg);
+    background-image: url(../ProductImages/caret-down-solid.svg);
   }
 
 }
@@ -229,31 +229,31 @@ details[open] .choose_nav_block{
     height: $IMG_HEIGHT;
   }
   .first {
-    background-image: url("ProductImages/image_placeholder_1657.png");
+    background-image: url("../ProductImages/image_placeholder_1657.png");
   }
   .second {
-    background-image: url("ProductImages/image_placeholder_1877.png");
+    background-image: url("../ProductImages/image_placeholder_1877.png");
   }
   .third {
-    background-image: url("ProductImages/image_placeholder_1907.png");
+    background-image: url("../ProductImages/image_placeholder_1907.png");
   }
   .fourth {
-    background-image: url("ProductImages/image_placeholder_1967.png");
+    background-image: url("../ProductImages/image_placeholder_1967.png");
   }
   .fifth {
-    background-image: url("ProductImages/image_placeholder_1997.png");
+    background-image: url("../ProductImages/image_placeholder_1997.png");
   }
   .sixth {
-    background-image: url("ProductImages/image_placeholder_2027.png");
+    background-image: url("../ProductImages/image_placeholder_2027.png");
   }
   .seventh {
-    background-image: url("ProductImages/image_placeholder_2057.png");
+    background-image: url("../ProductImages/image_placeholder_2057.png");
   }
   .eighth {
-    background-image: url("ProductImages/image_placeholder_1657.png");
+    background-image: url("../ProductImages/image_placeholder_1657.png");
   }
   .ninth {
-    background-image: url("ProductImages/image_placeholder_2087.png");
+    background-image: url("../ProductImages/image_placeholder_2087.png");
   }
 }
 .page_selector {

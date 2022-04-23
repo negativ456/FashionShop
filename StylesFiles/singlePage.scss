@@ -8,16 +8,16 @@
     background-repeat: no-repeat;
   }
   .first {
-    background-image: url("singlePage images/first.png");
+    background-image: url("../singlePage images/first.png");
   }
   .second {
-    background-image: url("singlePage images/third.png");
+    background-image: url("../singlePage images/third.png");
   }
   .third {
-    background-image: url("singlePage images/third.png");
+    background-image: url("../singlePage images/third.png");
   }
   .fourth {
-    background-image: url("singlePage images/fourth.png");
+    background-image: url("../singlePage images/fourth.png");
   }
 }
 .add_catalog {
@@ -164,7 +164,7 @@
     .add_to_cart:before {
       content: '';
       display: block;
-      background-image: url("singlePage images/cart.png");
+      background-image: url("../singlePage images/cart.png");
       width: 26px;
       height: 24px;
       margin-right: 15px;
