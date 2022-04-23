@@ -1,0 +1,167 @@
+.accordion_content {
+  padding: 40px 35px 80px;
+  border-bottom: 1px solid #e8e8e8;
+}
+details[open] .accordion_item {
+  border: 0;
+}
+
+.accordion_content_main {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+  margin-bottom: 15px;
+}
+
+.accordion_item {
+  font-size: 16px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  list-style-type: none;
+  user-select: none;
+  cursor: pointer;
+  padding: 25px 0;
+  border-bottom: 1px solid #e8e8e8;
+}
+.no-padding {
+  padding-top: 0;
+}
+.last_item {
+  margin-bottom: 90px;
+}
+.accordion_content {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion_content_add {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+  margin-bottom: 35px;
+}
+.input_block_add {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px;
+}
+.real-radio-btn {
+  width: 0;
+  height: 0;
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.input_data {
+  padding-left: 20px;
+  width: 370px;
+  height: 45px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.required {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #ff0d0d;
+  margin-bottom: 35px;
+}
+.forgot {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #222222;
+}
+.custom-radio-btn {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #ffffff;
+  border: 2px solid #555555;
+  border-radius: 50%;
+  vertical-align: text-top;
+}
+.custom-radio-btn::before {
+  content: "";
+
+  /* Рисуем внешний круг */
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #000000;
+  border-radius: 50%;
+
+  /* Выравниваем по центру */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(0);
+
+  transition: 0.2s ease-in;
+}
+.real-radio-btn:checked + .custom-radio-btn::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+.input_text {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #222222;
+  margin-left: 15px;
+}
+
+.right_text {
+  margin-left: 0;
+  margin-bottom: 15px;
+}
+.right_text:after {
+  color: red;
+  content: " *";
+}
+.label_block {
+  display: flex;
+  flex-direction: column;
+}
+.accordion_button {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 20px 55px;
+  text-decoration: none;
+  margin-right: 35px;
+
+}
+.input_block {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.mini_container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.mini_container:last-of-type {
+  margin-bottom: 48px;
+}
+.modify {
+  margin-bottom: 0;
+}
+.fa-angles-right {
+  font-size: 13px;
+  color: #b3b2b2;
+  margin-right: 4px;
+}

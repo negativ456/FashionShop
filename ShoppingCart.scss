@@ -1,0 +1,206 @@
+$ADDRESS_BLOCK_WIDTH: 355px;
+$BORDER_WIDTH: 1px;
+.cart_header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: -0.015em;
+  color: #222222;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eaeaea;
+}
+.nav {
+  margin-bottom: 90px;
+}
+.cart_header_item:first-child {
+  margin-right: 400px;
+}
+.cart_section_descr_header {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+.cart_section_descr_add {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+  color: #6f6e6e;
+
+}
+.cart_highlighted {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #575757;
+}
+.cart_img {
+  margin-right: 20px;
+}
+.cart_general {
+  display: flex;
+  align-items: center;
+  margin-right: 241px;
+  text-decoration: none;
+}
+.cart_option {
+  display: flex;
+  justify-content: center;
+}
+.cart_option:before {
+  cursor: pointer;
+}
+.cart_option:nth-of-type(1) {
+  width: 75px;
+}
+.cart_option:nth-of-type(2) {
+  width: 67px;
+}
+.cart_option:nth-of-type(3) {
+  width: 59px;
+}
+.cart_option:nth-of-type(4) {
+  width: 63px;
+}
+.cart_option:last-child {
+  width: 49px;
+}
+.number_items {
+  text-align: center;
+  width: 54px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+}
+.cart_section {
+  padding: 20px 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #eaeaea;
+}
+.cart_section:last-child {
+  margin-bottom: 45px;
+}
+.buttons_block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 65px;
+  .cart_button {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    padding: 19px 38px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    text-decoration: none;
+  }
+}
+.product_info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+  .product_block {
+    width: 355px;
+  }
+  .product_block_header {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+    margin-bottom: 20px;
+  }
+  .product_input {
+    width: $ADDRESS_BLOCK_WIDTH - 17px - 2 * $BORDER_WIDTH;
+    height: 45px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+    margin-bottom: 20px;
+    padding-left: 17px;
+  }
+  .last {
+    width: $ADDRESS_BLOCK_WIDTH - 2*43px;
+  }
+  .city_select {
+    width: 100%;
+  }
+  .product_submit {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    padding: 12px 14px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+  }
+  .product_block_descr {
+    font-size: 14px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #000000;
+    margin-bottom: 25px;
+  }
+  .product_block_total {
+    width: 100%;
+    background-color: #f5f3f3;
+    padding: 40px 43px;
+  }
+  .sub_total {
+    font-size: 11px;
+    line-height: 1.2;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #4a4a4a;
+    margin-bottom: 15px;
+  }
+  .sub_price {
+    margin-left: 10px;
+  }
+  .prices {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 17px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e2e2e2;
+  }
+  .grand_total {
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #222222;
+  }
+  .grand_price {
+    color: #f16d7f;
+    margin-left: 10px;
+  }
+  .checkout_button {
+    display: block;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 16px 38px;
+    background-color: #f16d7f;
+    transition: color, background-color .2s;
+  }
+  .checkout_button:hover {
+    color: #f16d7f;
+    background-color: #fff;
+    border: 1px solid #f16d7f;
+  }
+
+}

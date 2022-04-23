@@ -1,0 +1,242 @@
+.add_cart {
+  margin-bottom: 73px;
+  display: block;
+  text-decoration: none;
+  .add_img {
+    width: 261px;
+    height: 280px;
+    background-repeat: no-repeat;
+  }
+  .first {
+    background-image: url("singlePage images/first.png");
+  }
+  .second {
+    background-image: url("singlePage images/third.png");
+  }
+  .third {
+    background-image: url("singlePage images/third.png");
+  }
+  .fourth {
+    background-image: url("singlePage images/fourth.png");
+  }
+}
+.add_catalog {
+  display: flex;
+  justify-content: space-between;
+}
+.add_header {
+  font-size: 24px;
+  line-height: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.marker {
+  position: absolute;
+  top: -1px;
+  left: 40px;
+  width: 63px;
+  height: 3px;
+  background-color: #ef5b70;
+}
+.line_mini {
+  width: 147px;
+  height: 1px;
+  background-color: #eaeaea;
+  position: relative;
+  margin-bottom: 18px;
+}
+.slider {
+  background-color: #f7f7f7;
+  border: 1px solid #eaeaea;
+  position: relative;
+  .slide {
+    height: 777px;
+    display: flex;
+    justify-content: center;
+  }
+  .arrows {
+    display: flex;
+  }
+  .fa-solid {
+    position: absolute;
+    top: 50%;
+    color: #ffffff;
+    padding: 18px;
+    background-color: rgba(42,42,42,0.14);
+    transition: all .2s;
+  }
+  .fa-solid:hover {
+    background-color: #ef5b70;
+    color: #fff;
+
+  }
+  .fa-angle-left {
+    left: 0;
+  }
+  .fa-angle-right {
+    right: 0
+  }
+}
+.slider_info {
+  margin-bottom: 70px;
+  .info_card {
+  }
+  .slider_info_card {
+    padding-top: 43px;
+    padding-bottom: 74px;
+    width: 100%;
+    transform: translate(0, -50px);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eaeaea;
+  }
+  .collection {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #f16d7f;
+    text-transform: uppercase;
+    margin-bottom: 14px;
+  }
+  .card_header {
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+    margin-bottom: 67px;
+  }
+  .card_descr {
+    text-align: center;
+    width: 620px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #5e5e5e;
+    margin-bottom: 28px;
+  }
+  .price {
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #ef5b70;
+    margin-bottom: 43px;
+  }
+  .line {
+    width: 642px;
+    background-color: #ef5b70;
+    border: 1px solid #eaeaea;
+    margin-bottom: 65px;
+  }
+  .form_header {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: #2f2f2f;
+    text-transform: uppercase;
+  }
+  .select {
+    width: 537px;
+    .choose_box {
+      justify-content: space-between;
+      display: flex;
+      margin-bottom: 28px;
+
+    }
+    .add_to_cart {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 16px;
+      line-height: 1.2;
+      font-weight: 700;
+      padding: 20px 200px;
+      color: #ef5b70;
+      background-color: #ffffff;
+      border: 1px solid #ef5b70;
+    }
+    .add_to_cart:before {
+      content: '';
+      display: block;
+      background-image: url("singlePage images/cart.png");
+      width: 26px;
+      height: 24px;
+      margin-right: 15px;
+    }
+  }
+
+  .material_descr {
+    display: flex;
+    width: 335px;
+    justify-content: space-between;
+    margin-bottom: 37px;
+    .made {
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #b9b9b9;
+      text-transform: uppercase;
+    }
+    .mat_highlighted {
+      color: #2f2f2f;
+    }
+
+  }
+  .form_header {
+    display: block;
+  }
+
+  .chooser {
+    width: 144px;
+    height: 35px;
+    background-color: #ffffff;
+    border: 1px solid #eaeaea;
+  }
+
+}
+.site_nav {
+  background-color: #f8f3f4;
+  .nav {
+    height: 148px;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #636363;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text_nav {
+    font-size: 24px;
+    line-height: 20px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #f16d7f;
+  }
+  .bread_crumbs {
+    display: flex;
+    .main_nav {
+      font-size: 14px;
+      line-height: 20px;
+      font-weight: 300;
+      text-transform: uppercase;
+      color: #636363;
+      text-decoration: none;
+      transition: color .2s;
+    }
+    .main_nav:hover {
+      color: #f16d7f;
+    }
+    .last_nav {
+      font-weight: 700;
+      color: #f16d7f;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.accordion_content {
+  padding: 40px 35px 80px;
+}
+
+.accordion_content_main {
+  font-size: 13px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.accordion_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion_content_add {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 400;
+  color: #b3b2b2;
+}
+
+.input_text {
+  font-size: 12px;
+  line-height: 1.2;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.accordion_button {
+  font-size: 14px;
+  line-height: 1.2;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #4a4a4a;
+  background-color: #ffffff;
+  border: 1px solid #eaeaea;
+  padding: 20px 55px;
+}
+
+/*# sourceMappingURL=checkout.css.map */
